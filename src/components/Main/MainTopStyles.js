@@ -38,4 +38,12 @@ export const useStyles = makeStyles((theme) => ({
   teamhead: {
     color: "gray",
   },
+  root: {
+    width: "100%",
+    backgroundColor: theme.palette.background.paper,
+  },
+  formpaper: {
+    borderRadius: "20px",
+    marginTop: "1.5%",
+  },
 }));

@@ -8,10 +8,12 @@ import {
   ListItem,
   ListItemText,
   ListItemAvatar,
+  ListItemSecondaryAction,
   Avatar,
+  TextField,
 } from "@material-ui/core";
 import { useStyles } from "./MainTopStyles";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+import MailIcon from "@material-ui/icons/Mail";
 
 const MainTop = () => {
   const classes = useStyles();
@@ -100,9 +102,9 @@ const MainTop = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container>
+            <Grid container lg={12} md={12}>
               <List className={classes.root}>
-                <ListItem alignItems="flex-start">
+                <ListItem>
                   <ListItemAvatar>
                     <Avatar
                       alt="Remy Sharp"
@@ -125,9 +127,10 @@ const MainTop = () => {
                       </React.Fragment>
                     }
                   />
-                  <PermIdentityIcon edge="end" />
+                  <ListItemSecondaryAction>
+                    <MailIcon edge="end" style={{ color: "lightgreen" }} />
+                  </ListItemSecondaryAction>
                 </ListItem>
-                <Divider variant="inset" component="li" />
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
                     <Avatar
@@ -151,8 +154,10 @@ const MainTop = () => {
                       </React.Fragment>
                     }
                   />
+                  <ListItemSecondaryAction>
+                    <MailIcon edge="end" style={{ color: "lightgreen" }} />
+                  </ListItemSecondaryAction>
                 </ListItem>
-                <Divider variant="inset" component="li" />
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
                     <Avatar
@@ -176,8 +181,135 @@ const MainTop = () => {
                       </React.Fragment>
                     }
                   />
+                  <ListItemSecondaryAction>
+                    <MailIcon edge="end" style={{ color: "lightgreen" }} />
+                  </ListItemSecondaryAction>
                 </ListItem>
               </List>
+            </Grid>
+          </Paper>
+          <Paper className={classes.formpaper}>
+            <Grid container lg={12} md={12}>
+              <Grid item style={{ marginLeft: "10px", marginTop: "10px" }}>
+                <Typography variant="h6" className={classes.teamhead}>
+                  Edit Profile
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container justify="center" style={{ marginBottom: "5%" }}>
+              <Grid item lg={11} md={11}>
+                <Grid container>
+                  <Grid item lg={5} md={5} style={{ marginTop: "10px" }}>
+                    <TextField
+                      disabled
+                      id="outlined-disabled"
+                      label="Company (disabled)"
+                      defaultValue="Code Inc."
+                      variant="outlined"
+                      style={{ width: "98%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={3} md={3} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Username"
+                      defaultValue="michael23"
+                      variant="outlined"
+                      style={{ width: "98%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Email Address"
+                      defaultValue=" "
+                      placeholder="Email"
+                      variant="outlined"
+                      style={{ width: "98%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={6} md={6} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="First Name"
+                      defaultValue="Chet"
+                      variant="outlined"
+                      style={{ width: "99%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={6} md={6} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Last Name"
+                      defaultValue="Faker"
+                      variant="outlined"
+                      style={{ width: "99%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={12} md={12} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Address"
+                      defaultValue="Melbourne, Australia"
+                      variant="outlined"
+                      style={{ width: "100%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="City"
+                      defaultValue="Melbourne"
+                      variant="outlined"
+                      style={{ width: "99%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Country"
+                      defaultValue="Australia"
+                      variant="outlined"
+                      style={{ width: "99%" }}
+                    />
+                  </Grid>
+                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                    <TextField
+                      id="filled-number"
+                      label="Postal Code"
+                      type="number"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                      variant="outlined"
+                      style={{ width: "99%" }}
+                      placeholder="ZIP Code"
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    style={{ marginTop: "10px", marginBottom: "2%" }}
+                  >
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="About me"
+                      defaultValue="Oh so, your weak rhyme You doubt I'll bother, reading into it"
+                      variant="outlined"
+                      style={{ width: "100%" }}
+                    />
+                  </Grid>
+                </Grid>
+              </Grid>
             </Grid>
           </Paper>
         </Grid>
