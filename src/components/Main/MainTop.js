@@ -15,6 +15,11 @@ import {
 } from "@material-ui/core";
 import { useStyles } from "./MainTopStyles";
 import MailIcon from "@material-ui/icons/Mail";
+import bg from "../../assets/bg.jpg";
+import user from "../../assets/user.jpg";
+import one from "../../assets/1.jpg";
+import two from "../../assets/2.jpg";
+import three from "../../assets/3.jpg";
 
 const MainTop = () => {
   const classes = useStyles();
@@ -32,20 +37,12 @@ const MainTop = () => {
             {" "}
             <Grid container justify="center">
               <Grid item lg={12} md={12}>
-                <img
-                  className={classes.image}
-                  src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/damir-bosnjak.jpg"
-                  alt="Image"
-                />
+                <img className={classes.image} src={bg} alt="Image" />
               </Grid>
             </Grid>
             <Grid container justify="center">
               <Grid item lg={1} md={1}>
-                <img
-                  className={classes.userimage}
-                  src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/mike.jpg"
-                  alt="User"
-                />
+                <img className={classes.userimage} src={user} alt="User" />
               </Grid>
             </Grid>
             <Grid container justify="center">
@@ -84,20 +81,6 @@ const MainTop = () => {
                     </Typography>
                   </Grid>
                 </Grid>
-                {/* <Grid container justify="center">
-                  <Grid item lg={2} md={2}>
-                    <Typography className={classes.sub} variant="caption">
-                      No diggity
-                    </Typography>
-                  </Grid>
-                </Grid>
-                <Grid container justify="center">
-                  <Grid item lg={3} md={3}>
-                    <Typography className={classes.sub} variant="caption">
-                      I wanna bag it up"
-                    </Typography>
-                  </Grid>
-                </Grid> */}
               </Grid>
             </Grid>
             <Grid container justify="center">
@@ -135,10 +118,7 @@ const MainTop = () => {
               <List className={classes.root}>
                 <ListItem>
                   <ListItemAvatar>
-                    <Avatar
-                      alt="Remy Sharp"
-                      src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/faces/ayo-ogunseinde-2.jpg"
-                    />
+                    <Avatar alt="Remy Sharp" src={one} />
                   </ListItemAvatar>
                   <ListItemText
                     primary="DJ Khaled"
@@ -162,10 +142,7 @@ const MainTop = () => {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar
-                      alt="Wipadika Innovations"
-                      src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/faces/joe-gardner-2.jpg"
-                    />
+                    <Avatar alt="Wipadika Innovations" src={two} />
                   </ListItemAvatar>
                   <ListItemText
                     primary="Wipadika Innovations"
@@ -189,10 +166,7 @@ const MainTop = () => {
                 </ListItem>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>
-                    <Avatar
-                      alt="Cindy Baker"
-                      src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/faces/clem-onojeghuo-2.jpg"
-                    />
+                    <Avatar alt="Cindy Baker" src={three} />
                   </ListItemAvatar>
                   <ListItemText
                     primary="Flume"
