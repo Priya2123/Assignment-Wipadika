@@ -11,6 +11,7 @@ import {
   ListItemSecondaryAction,
   Avatar,
   TextField,
+  Chip,
 } from "@material-ui/core";
 import { useStyles } from "./MainTopStyles";
 import MailIcon from "@material-ui/icons/Mail";
@@ -26,7 +27,7 @@ const MainTop = () => {
       </Grid>
       <Divider className={classes.divider} />
       <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={11} md={11}>
+        <Grid item lg={11} md={11} sm={11} xs={11}>
           <Paper className={classes.paper}>
             {" "}
             <Grid container justify="center">
@@ -39,7 +40,7 @@ const MainTop = () => {
               </Grid>
             </Grid>
             <Grid container justify="center">
-              <Grid item lg={2} md={2}>
+              <Grid item lg={1} md={1}>
                 <img
                   className={classes.userimage}
                   src="http://wi-interview-before-1.s3-website.ap-south-1.amazonaws.com/assets/img/mike.jpg"
@@ -47,28 +48,56 @@ const MainTop = () => {
                 />
               </Grid>
             </Grid>
-            <Grid
-              container
-              style={{ alignItems: "center", justifyContent: "center" }}
-              justify="center"
-            >
-              <Grid item lg={2} md={2}>
-                <Typography className={classes.name}>Chet Faker</Typography>
+            <Grid container justify="center">
+              <Grid item lg={7} md={7}>
+                <Grid
+                  container
+                  style={{ textAlign: "center" }}
+                  justify="center"
+                >
+                  <Grid item lg={2} md={2}>
+                    <Typography className={classes.name}>Chet Faker</Typography>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
             <Grid container justify="center">
-              <Grid item lg={2} md={2}>
-                <Typography className={classes.sub} variant="caption">
-                  @chetfaker
-                </Typography>
+              <Grid item lg={5} md={5}>
+                <Grid container justify="center">
+                  <Grid item lg={2} md={2}>
+                    <Typography className={classes.sub} variant="caption">
+                      @chetfaker
+                    </Typography>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
-            <Grid container justify="center">
-              <Grid item lg={3} md={3}>
-                <Typography className={classes.sub} variant="caption">
-                  "I like the way you work it <br /> No diggity <br /> I wanna
-                  bag it up"
-                </Typography>
+            <Grid container lg={12} md={12} justify="center">
+              <Grid item lg={8} md={8}>
+                <Grid container justify="center">
+                  <Grid item lg={3} md={3} style={{ textAlign: "center" }}>
+                    <Typography className={classes.sub} variant="caption">
+                      "I like the way you work it
+                      <br />
+                      No diggity
+                      <br />I wanna bag it up!
+                    </Typography>
+                  </Grid>
+                </Grid>
+                {/* <Grid container justify="center">
+                  <Grid item lg={2} md={2}>
+                    <Typography className={classes.sub} variant="caption">
+                      No diggity
+                    </Typography>
+                  </Grid>
+                </Grid>
+                <Grid container justify="center">
+                  <Grid item lg={3} md={3}>
+                    <Typography className={classes.sub} variant="caption">
+                      I wanna bag it up"
+                    </Typography>
+                  </Grid>
+                </Grid> */}
               </Grid>
             </Grid>
             <Grid container justify="center">
@@ -196,10 +225,17 @@ const MainTop = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container justify="center" style={{ marginBottom: "5%" }}>
-              <Grid item lg={11} md={11}>
+            <Grid container justify="center">
+              <Grid item lg={11} md={11} sm={11} xs={11}>
                 <Grid container>
-                  <Grid item lg={5} md={5} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={5}
+                    md={5}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       disabled
                       id="outlined-disabled"
@@ -209,7 +245,14 @@ const MainTop = () => {
                       style={{ width: "98%" }}
                     />
                   </Grid>
-                  <Grid item lg={3} md={3} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -219,7 +262,14 @@ const MainTop = () => {
                       style={{ width: "98%" }}
                     />
                   </Grid>
-                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={4}
+                    md={4}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -230,7 +280,14 @@ const MainTop = () => {
                       style={{ width: "98%" }}
                     />
                   </Grid>
-                  <Grid item lg={6} md={6} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={6}
+                    md={6}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -240,7 +297,14 @@ const MainTop = () => {
                       style={{ width: "99%" }}
                     />
                   </Grid>
-                  <Grid item lg={6} md={6} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={6}
+                    md={6}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -250,7 +314,14 @@ const MainTop = () => {
                       style={{ width: "99%" }}
                     />
                   </Grid>
-                  <Grid item lg={12} md={12} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -260,7 +331,14 @@ const MainTop = () => {
                       style={{ width: "100%" }}
                     />
                   </Grid>
-                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={4}
+                    md={4}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -270,7 +348,14 @@ const MainTop = () => {
                       style={{ width: "99%" }}
                     />
                   </Grid>
-                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={4}
+                    md={4}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       required
                       id="outlined-required"
@@ -280,7 +365,14 @@ const MainTop = () => {
                       style={{ width: "99%" }}
                     />
                   </Grid>
-                  <Grid item lg={4} md={4} style={{ marginTop: "10px" }}>
+                  <Grid
+                    item
+                    lg={4}
+                    md={4}
+                    xs={12}
+                    sm={12}
+                    style={{ marginTop: "10px" }}
+                  >
                     <TextField
                       id="filled-number"
                       label="Postal Code"
@@ -297,6 +389,8 @@ const MainTop = () => {
                     item
                     lg={12}
                     md={12}
+                    xs={12}
+                    sm={12}
                     style={{ marginTop: "10px", marginBottom: "2%" }}
                   >
                     <TextField
@@ -309,6 +403,17 @@ const MainTop = () => {
                     />
                   </Grid>
                 </Grid>
+              </Grid>
+            </Grid>
+            <Grid
+              container
+              lg={12}
+              md={12}
+              justify="center"
+              style={{ marginBottom: "5%" }}
+            >
+              <Grid item lg={2} md={2}>
+                <Chip label="Update Profile" className={classes.chip} />
               </Grid>
             </Grid>
           </Paper>

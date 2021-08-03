@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     borderTopRightRadius: "20px",
     borderTopLeftRadius: "20px",
     // objectFit: "contain",
+    backgroundSize: "cover",
   },
   paper: {
     borderTopRightRadius: "20px",
@@ -23,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   name: {
     fontWeight: "bold",
-    color: "lightblue",
+    color: "#51cbce",
   },
   sub: {
     color: "lightGray",
@@ -45,5 +46,11 @@ export const useStyles = makeStyles((theme) => ({
   formpaper: {
     borderRadius: "20px",
     marginTop: "1.5%",
+  },
+  chip: {
+    backgroundColor: "#51cbce",
+    color: "#fff",
+    marginBottom: "10%",
+    cursor: "pointer",
   },
 }));

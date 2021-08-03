@@ -35,7 +35,9 @@ const Sidebar = () => {
         className={classes.user}
       >
         <PermIdentityIcon style={{ marginRight: "10px" }} />{" "}
-        <Typography variant="body2">USER PROFILE</Typography>
+        <Typography variant="body2" style={{ cursor: "pointer" }}>
+          USER PROFILE
+        </Typography>
       </Grid>
     </Grid>
   );
